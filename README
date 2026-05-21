@@ -1,0 +1,18 @@
+# WebStock - Sistema Web de Controle de Estoque
+
+## Descrição do Problema
+Controlar o estoque no papel ou em planilhas gera erros, perda de tempo e falta de produtos nas pequenas distribuidoras.
+
+## Objetivo do Sistema
+Uma plataforma web que centraliza todo o controle. Ela atualiza o saldo automaticamente a cada movimentação e avisa o gestor a hora exata de comprar mais, eliminando a bagunça.
+
+## Tecnologias Utilizadas
+O projeto será desenvolvido utilizando as seguintes tecnologias:
+* **Frontend:** HTML, CSS e JavaScript
+* **Backend:** Node com fastify
+* **Banco de Dados:** SQLite
+
+---
+Autor: Filipi de Quadros  
+Data de Início: 18/05/2026  
+Versão: 1.0
