@@ -1,0 +1,27 @@
+{
+  "name": "-projeto_industria",
+  "version": "1.0.0",
+  "description": "Controlar o estoque no papel ou em planilhas gera erros, perda de tempo e falta de produtos nas pequenas distribuidoras.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipiquadros/-projeto_industria.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipiquadros/-projeto_industria/issues"
+  },
+  "homepage": "https://github.com/filipiquadros/-projeto_industria#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "fastify": "^5.8.5",
+    "pg": "^8.21.0"
+  }
+}

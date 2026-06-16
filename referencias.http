@@ -1,0 +1,23 @@
+###
+
+GET http://localhost:3000/usuarios
+
+###
+
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Kayson Caetano",
+    "email": "kayson@example.com",
+    "senha": "1234"
+}
+
+###
+
+GET http://localhost:3000/produtos
+
+###
+
+POST http://localhost:3000/produtos
+Content-Type: application/json
