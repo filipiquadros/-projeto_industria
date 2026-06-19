@@ -31,4 +31,26 @@ export default async function produtoRoutes(servidor) {
     }
     return reply.status(201).send({ message: "Produto Alterado!" });
   });
+
+  servidor.get("/api/produtos/:id", async (request, reply) => {
+    const { id } = request.params;
+    const result = await sql.query("SELECT * FROM produtos WHERE id = $1", [id]);
+
+    if (result.rows.length === 0) {
+      return reply.code(404).send({ error: "Produto não encontrado." })}
+
+    return result.rows[0]; 
+  });
+
+  servidor.delete("/api/produtos/:id", async (request, reply) => {
+    const { id } = request.params;
+    const result = await sql.query("DELETE FROM produtos WHERE id = $1 RETURNING *", [id]);
+
+    if (result.rows.length === 0) {
+      return reply.code(404).send({ error: "Produto não encontrado." });
+    }
+
+    return reply.code(204).send(); 
+  });
+  
 }

@@ -15,13 +15,20 @@ Content-Type: application/json
 
 ###
 
-PUT http://localhost:3000/api/produtos/2
+PUT http://localhost:3000/api/produtos/4
 Content-Type: application/json
 
 {
   "nome": "Caixa de Papelão M",
   "categoria": "Embalagens",
   "quantidade": 150,
-  "preco": 10.00,
-  "estoque_minimo": 20
+  "preco": 12.00,
+  "estoque_minimo": 15
 }
+
+### 
+GET http://localhost:3000/api/produtos/2
+Accept: application/json
+
+### 
+DELETE http://localhost:3000/api/produtos/3
