@@ -1,23 +1,27 @@
+### 
+GET http://localhost:3000/api/produtos
+Accept: application/json
+
 ###
-
-GET http://localhost:3000/usuarios
-
-###
-
-POST http://localhost:3000/usuarios
+POST http://localhost:3000/api/produtos
 Content-Type: application/json
 
 {
-    "nome": "Kayson Caetano",
-    "email": "kayson@example.com",
-    "senha": "1234"
+  "nome": "Caixa de Papelão P",
+  "categoria": "Embalagens",
+  "preco": 2.50,
+  "estoque_minimo": 10
 }
 
 ###
 
-GET http://localhost:3000/produtos
-
-###
-
-POST http://localhost:3000/produtos
+PUT http://localhost:3000/api/produtos/2
 Content-Type: application/json
+
+{
+  "nome": "Caixa de Papelão M",
+  "categoria": "Embalagens",
+  "quantidade": 150,
+  "preco": 10.00,
+  "estoque_minimo": 20
+}

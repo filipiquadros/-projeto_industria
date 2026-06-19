@@ -10,7 +10,7 @@ Uma plataforma web que centraliza todo o controle. Ela atualiza o saldo automati
 O projeto será desenvolvido utilizando as seguintes tecnologias:
 * **Frontend:** HTML, CSS e JavaScript
 * **Backend:** Node com fastify
-* **Banco de Dados:** SQLite
+* **Banco de Dados:** PostgreSQL
 
 ---
 Autor: Filipi de Quadros  
