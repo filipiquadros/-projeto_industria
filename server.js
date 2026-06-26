@@ -2,6 +2,7 @@ import Fastify from "fastify";
 import { Pool } from "pg";
 import cors from '@fastify/cors';
 import rotaProdutos from "./routes/produtos.js";
+import rotaMovimentacoes from "./routes/movimentacoes.js";
 
 export const sql = new Pool({
     user: "postgres",
@@ -19,5 +20,7 @@ servidor.register(cors, {
 })
 
 servidor.register(rotaProdutos);
+servidor.register(rotaMovimentacoes);
+
 
 servidor.listen({ port: 3000 })
