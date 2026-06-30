@@ -1,8 +1,10 @@
 ### 
+# RF01 - Cadastro de Produtos (Listar Todos)
 GET http://localhost:3000/api/produtos
 Accept: application/json
 
 ###
+# RF01 - Cadastro de Produtos (Criar Produto)
 POST http://localhost:3000/api/produtos
 Content-Type: application/json
 
@@ -14,7 +16,7 @@ Content-Type: application/json
 }
 
 ###
-
+# RF01 - Cadastro de Produtos (Atualizar Produto)
 PUT http://localhost:3000/api/produtos/4
 Content-Type: application/json
 
@@ -27,17 +29,21 @@ Content-Type: application/json
 }
 
 ### 
+# RF01 - Cadastro de Produtos (Buscar por ID)
 GET http://localhost:3000/api/produtos/4
 Accept: application/json
 
 ### 
+# RF01 - Cadastro de Produtos (Excluir Produto)
 DELETE http://localhost:3000/api/produtos/4
 
 ### 
+# RF01 - Cadastro de Produtos (Listar Todos - Duplicado)
 GET http://localhost:3000/api/produtos 
 Accept: application/json
 
 ### 
+# RF01 - Cadastro de Produtos (Criar Produto - Duplicado)
 POST http://localhost:3000/api/produtos 
 Content-Type: application/json
 
@@ -49,6 +55,7 @@ Content-Type: application/json
 } 
 
 ### 
+# RF01 - Cadastro de Produtos (Atualizar Produto - Duplicado)
 PUT http://localhost:3000/api/produtos/4 
 Content-Type: application/json
 
@@ -61,14 +68,17 @@ Content-Type: application/json
 } 
 
 ### 
+# RF01 - Cadastro de Produtos (Buscar por ID - Duplicado)
 GET http://localhost:3000/api/produtos/4 
 Accept: application/json
 
 ### 
+# RF01 - Cadastro de Produtos (Excluir Produto - Duplicado)
 DELETE http://localhost:3000/api/produtos/4 
 
 
 ### 
+# RF02 e RF03 - Registro de Movimentação e Atualização Automática de Saldo (Entrada)
 POST http://localhost:3000/api/movimentacoes
 Content-Type: application/json
 
@@ -79,6 +89,7 @@ Content-Type: application/json
 }
 
 ### 
+# RF02 e RF03 - Registro de Movimentação e Atualização Automática de Saldo (Saída)
 POST http://localhost:3000/api/movimentacoes
 Content-Type: application/json
 
@@ -89,13 +100,16 @@ Content-Type: application/json
 }
 
 ### 
+# RF02 - Registro de Movimentação (Listar Histórico de Movimentações)
 GET http://localhost:3000/api/movimentacoes
 Accept: application/json
 
 ### 
+# RF04 - Alertas de Estoque Mínimo
 GET http://localhost:3000/api/produtos/alertas
 Accept: application/json
 
 ### 
+# RF05 - Relatório de Estoque
 GET http://localhost:3000/api/produtos/relatorio
 Accept: application/json
